@@ -41,6 +41,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+show_excerpts: true
+
 plainwhite:
   name: Luiz Carlos Muniz
   tagline: Developer
