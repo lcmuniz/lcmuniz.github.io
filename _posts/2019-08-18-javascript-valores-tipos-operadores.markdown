@@ -77,6 +77,13 @@ As strings delimitadas pelo sinal da crase permitem que coloquemos expressões e
 
 Esta string será convertida eno texto __40 graus Celsius é igual a 53.6 graus Fahrenheit.__ quando o programa for executado.
 
+Podemos utilizar o operador + (concatenação) para unir strings. Por exemplo:
+
+{% highlight javascript %}
+"O nome dele é " + "José da Silva"   // resulta em "O nome dele é José da Silva"
+{% endhighlight %}
+
+
 ### Valores lógicos (booleans)
 
 Existem dois valores do tipo `boolean` (true e false) que representam os estados verdadeiro e falso, respectivamente. 
@@ -142,3 +149,7 @@ Já o valor `NaN` significa Not a Number (não é um número) e é resultado de 
 é uma expressão que tenta dividir 3 por um texto.  O resultado dessa expressão é `NaN`.
 
 Os valores `undefined` e `null` representam ausência de valor e serão tratados quando falarmos de variáveis em outro artigo. 
+
+### Conclusão
+
+Vimos que os valores básicos da linguagem JavaScript são números (number), textos (string) e lógicos (boolean). Esses valores podem ser usados em expressões conjuntamente com operadores para formar expressões mais complexas. 
