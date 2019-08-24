@@ -27,21 +27,21 @@ Os números podem ser usados em expressões matemáticas. As operações com nú
 O operador de multiplicação é \* (asterísco) e o de divisão é / (barra).
 
 {% highlight javascript %}
-3 - 4 + 5   // resultado: 4
+3 - 4 + 5 // resultado: 4
 // podemos usar parênteses para alterar a prioridade dos operadores
-3 - (4 + 5) // resultado: -6 
-3 * 6 / 2   // resultado: 9
-// os operadores * e / têm prioridade em relação aos operadores + e -
-4 + 2 * 3   // resultado: 10 
-(4 + 2) * 3 // resultado: 18
+3 - (4 + 5) // resultado: -6
+3 _ 6 / 2 // resultado: 9
+// os operadores _ e / têm prioridade em relação aos operadores + e -
+4 + 2 _ 3 // resultado: 10
+(4 + 2) _ 3 // resultado: 18
 {% endhighlight %}
 
 Além das quatro operações, temos o operador % que nos retorna o resto da divisão dos seus operadores.
 
 {% highlight javascript %}
-15 % 4   // resultado: 3, pois 15 / 4 é igual 3 e 'sobra' 3
-12 % 2   // resultado: 0, pois 12 / 2 é igual a 6 e não 'sobra' nada
-7 % 2    // resultado: 1, pois 7 / 2 é igual 3 e 'sobra' 1
+15 % 4 // resultado: 3, pois 15 / 4 é igual 3 e 'sobra' 3
+12 % 2 // resultado: 0, pois 12 / 2 é igual a 6 e não 'sobra' nada
+7 % 2 // resultado: 1, pois 7 / 2 é igual 3 e 'sobra' 1
 {% endhighlight %}
 
 ### Textos (strings)
@@ -51,10 +51,10 @@ Os valores do tipo `string` representam textos. São escritos entre aspas (simpl
 {% highlight javascript %}
 "João da Silva"
 'Rua do Sol, 123'
-`Isto  é uma frase.`
+`Isto é uma frase.`
 {% endhighlight %}
 
-Ao escrevermos strings temos que tomar cuidado com textos que contenham aspas em seu interior. Para ilustrar o problema, suponha que queiramos escrever a string __Te encontro no Bob's mais tarde__. Se representarmos assim
+Ao escrevermos strings temos que tomar cuidado com textos que contenham aspas em seu interior. Para ilustrar o problema, suponha que queiramos escrever a string **Te encontro no Bob's mais tarde**. Se representarmos assim
 
 {% highlight javascript %}
 `'Te encontro no Bob's mais tarde'`
@@ -69,32 +69,31 @@ Para solucionar este tipo de situação, fazemos o seguinte: caso o texto tenha 
 'Ele disse "Olá" assim que entrou.'
 {% endhighlight %}
 
-As strings delimitadas pelo sinal da crase permitem que coloquemos expressões em seu interior que serão avaliadas quando o programa for executado. As expressões devem ser colocadas dentro dos sinais ${}. Por exemplo:
+As strings delimitadas pelo sinal da crase permitem que coloquemos expressões em seu interior que serão avaliadas quando o programa for executado. As expressões devem ser colocadas dentro dos sinais \${}. Por exemplo:
 
 {% highlight javascript %}
 `40 graus Celsius é igual a ${40 * 9 / 5 + 32} graus Fahrenheit.`
 {% endhighlight %}
 
-Esta string será convertida eno texto __40 graus Celsius é igual a 53.6 graus Fahrenheit.__ quando o programa for executado.
+Esta string será convertida eno texto **40 graus Celsius é igual a 53.6 graus Fahrenheit.** quando o programa for executado.
 
 Podemos utilizar o operador + (concatenação) para unir strings. Por exemplo:
 
 {% highlight javascript %}
-"O nome dele é " + "José da Silva"   // resulta em "O nome dele é José da Silva"
+"O nome dele é " + "José da Silva" // resulta em "O nome dele é José da Silva"
 {% endhighlight %}
-
 
 ### Valores lógicos (booleans)
 
-Existem dois valores do tipo `boolean` (true e false) que representam os estados verdadeiro e falso, respectivamente. 
+Existem dois valores do tipo `boolean` (true e false) que representam os estados verdadeiro e falso, respectivamente.
 
 Os valores booleans são obtidos a partir da avaliação de condições que são criadas através dos operadores de comparação maior que (>), menor que (<), maior ou igual a (>=), menor ou igual a (<=), igual (==) e diferente (!=).
 
 {% highlight javascript %}
-3 > 2       // resultado: true, pois 3 é maior que 2
-3 <= 1      // resultado: false, pois 3 não é maior ou igual a 1
-4 + 5 == 9  // resultado: true, pois 4 + 5 é igual a 9
-3 + 2 != 5  // resultado: false, pois 3 + 2 não é diferente de 5
+3 > 2 // resultado: true, pois 3 é maior que 2
+3 <= 1 // resultado: false, pois 3 não é maior ou igual a 1
+4 + 5 == 9 // resultado: true, pois 4 + 5 é igual a 9
+3 + 2 != 5 // resultado: false, pois 3 + 2 não é diferente de 5
 {% endhighlight %}
 
 As expressões lógicas podem ser combinadas usando-se os operadores lógicos e (&&), ou (||) e negação (!).
@@ -102,25 +101,25 @@ As expressões lógicas podem ser combinadas usando-se os operadores lógicos e 
 O operador && (lê-se e)retorna verdadeiro quando seus dois operadores são verdadeiros ao mesmo tempo.
 
 {% highlight javascript %}
-3 > 2 && 2 < 3       // resultado: false, pois 3 é maior que 2 mas 2 não é menor que 3 
-4 + 5 == 9 && 3 > 1  // resultado: true, pois 4 + 5 é igual a 9 e 3 é maior que 1
+3 > 2 && 2 < 3 // resultado: false, pois 3 é maior que 2 mas 2 não é menor que 3
+4 + 5 == 9 && 3 > 1 // resultado: true, pois 4 + 5 é igual a 9 e 3 é maior que 1
 {% endhighlight %}
 
 O operador || (lê-se ou) retorna verdadeiro quando qualquer um dos seus dois operadores é verdadeiro.
 
 {% highlight javascript %}
-3 > 2 || 2 < 3       // resultado: true, pois 3 é maior que 2  
-4 + 5 > 10 || 3 < 1  // resultado: false, pois 4 + 5 não é maior que 9 nem 3 é menor que 1
+3 > 2 || 2 < 3 // resultado: true, pois 3 é maior que 2  
+4 + 5 > 10 || 3 < 1 // resultado: false, pois 4 + 5 não é maior que 9 nem 3 é menor que 1
 {% endhighlight %}
 
 O operador ! (lê-se não) retorna verdadeiro se seu operador é falso e retorna false se seu operador é verdadeiro. Ou seja, ele nega seu operador.
 
 {% highlight javascript %}
-! 3 > 2           // resultado: false, pois 3 é maior que 2 (true)  
-! (4 + 4 == 7)    // resultado: true, pois 4 + 4 não é igual a 7 (false)
+! 3 > 2 // resultado: false, pois 3 é maior que 2 (true)  
+! (4 + 4 == 7) // resultado: true, pois 4 + 4 não é igual a 7 (false)
 {% endhighlight %}
 
-### Valores especiais 
+### Valores especiais
 
 JavaScript tem algumas palavras-chave que representam valores especiais. São eles:
 
@@ -135,21 +134,23 @@ null
 Estes valores são resultados de determinadas operações. Por exemplo, a expressão
 
 {% highlight javascript %}
-` 2 / 0 `
+`2 / 0`
 {% endhighlight %}
 
-retorna o valor `Infinity`. Em outras linguagens essa expressão resultaria em um erro, pois não podemos dividir um número por 0, mas em JavaScript ela é avaliada e o resultado retornado é Infinity. 
+retorna o valor `Infinity`. Em outras linguagens essa expressão resultaria em um erro, pois não podemos dividir um número por 0, mas em JavaScript ela é avaliada e o resultado retornado é Infinity.
 
 Já o valor `NaN` significa Not a Number (não é um número) e é resultado de uma expressão que não pode ser avaliada. Por exemplo:
 
 {% highlight javascript %}
-` 3 / 'branco'`
+`3 / 'branco'`
 {% endhighlight %}
 
-é uma expressão que tenta dividir 3 por um texto.  O resultado dessa expressão é `NaN`.
+é uma expressão que tenta dividir 3 por um texto. O resultado dessa expressão é `NaN`.
 
-Os valores `undefined` e `null` representam ausência de valor e serão tratados quando falarmos de variáveis em outro artigo. 
+Os valores `undefined` e `null` representam ausência de valor e serão tratados quando falarmos de variáveis em outro artigo.
 
 ### Conclusão
 
-Vimos que os valores básicos da linguagem JavaScript são números (number), textos (string) e lógicos (boolean). Esses valores podem ser usados em expressões conjuntamente com operadores para formar expressões mais complexas. 
+Vimos que os valores básicos da linguagem JavaScript são números (number), textos (string) e lógicos (boolean). Esses valores podem ser usados em expressões conjuntamente com operadores para formar expressões mais complexas.
+
+Este post é baseado no livro _Eloquent JavaScript_ de Marijn Haverbeke.
