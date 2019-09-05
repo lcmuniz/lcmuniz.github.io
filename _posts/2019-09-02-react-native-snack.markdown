@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "React Native - Lista de Contatos"
+title: "React Native - Lista de Contatos - Parte 1"
 date: 2019-09-02 10:29:11 -0300
 categories: react-native
 ---
