@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavasCript - Variáveis"
+title: "JavaScript - Variáveis"
 date: 2019-08-24 00:39:10 -0300
 categories: javascript
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavasCript - Valores, Tipos e Operadores"
+title: "JavaScript - Valores, Tipos e Operadores"
 date: 2019-08-18 12:52:59 -0300
 categories: javascript
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavasCript - Fluxo de Controle"
+title: "JavaScript - Fluxo de Controle"
 date: 2019-09-04 03:39:10 -0300
 categories: javascript
 ---
